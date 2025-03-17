@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    border: 1px solid blue;
+}
+
+/*Styling bagian header*/
+.header {
+    background-color: rgba(11, 11, 212, 0.89);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+}
+
+.column {
+    display: inline-block;
+}
+
+/*Styling bagian Column Vertical*/
+.vertical_bar {
+    list-style-type: none;
+    width: 15%;
+    padding: 0 0 40vw 8px;
+    background-color: rgb(222, 219, 219);
+}
+
+.vertical_bar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.vertical_bar li a:hover {
+    color: blue;
+    font-size: 1.2em;
+}
+
+.vertical_bar li a:active{
+    color: red;
+    text-transform: uppercase;
+}
+
+
+/*Styling bagian penjelasan*/
+
+.isi {
+    width: 50%;
+    position: absolute;
+}
+
+.penjelasan {
+    transform: translateY(25%);
+}
+
+.judul_isi {
+    font-weight: 900;
+    font-size: 3.2rem;
+    margin: 2% 0 1% 0;
+    overflow: auto;
+}
+
+/*Gambar*/
+.column img {
+    width: 25%;
+    position:absolute;
+    transform: translateX(220%);
+}
+
+/*cc*/
+.down_header {
+    background-color: blue;
+    position: relative;
+    text-align: center;
+}
+.text {
+    color: white;
+    font-size: 1.05rem;
+    padding: 5px;
+}

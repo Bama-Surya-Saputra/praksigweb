@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(
+        to left,rgba(126, 248, 110, 0.589), rgb(82, 255, 171),rgba(75, 255, 105, 0.62)
+    );
+} 
+
+h2 {
+    text-transform: capitalize;
+    font-family: Outfit, serif;
+    text-align: center;
+    font-size: 1.86em;
+}
+
+p {
+    font-family: PT Sans Caption, sans-serif;
+    font-size: 0.8em;
+}
+
+p b {
+    font-family: Audiowide, serif;
+    font-size: 0.92em;
+}
+
+input {
+    border: 2px solid rgb(135, 135, 239);
+    border-radius: 5px;
+}
+
+input:hover {
+    border: 2.5px solid rgb(57, 173, 92);
+}
+
+.input {
+    font-size: 0.92em;
+    font-weight: 500;
+}
+
+button {
+    text-transform: capitalize;
+    font-family: IBM Plex Sans, serif;
+    font-size: 1.3em;
+    text-align: center;
+    border: 3px solid rgb(94, 255, 0);
+    background-image: linear-gradient(to left, rgba(84, 95, 247, 0.75),rgb(103, 245, 255), rgb(103, 245, 255),rgb(103, 245, 255), rgba(84, 95, 247,0.75));
+    font-weight: 900;
+    padding: 5px 20px;
+    border-radius: 7px;
+    word-spacing: 2px;
+    letter-spacing: 1.1px;
+}
+
+button:hover {
+    padding: 10px 20px;
+}
+
+button:active {
+    color: rgb(42, 105, 72);
+}
+
+#hasil_3 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#alert {
+    color: red;
+    font-size: 1.1em;
+}

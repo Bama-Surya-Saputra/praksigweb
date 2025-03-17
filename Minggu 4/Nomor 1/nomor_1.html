@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 1</title>
+</head>
+
+<body>
+    <h1>Hitung faktorial dari input</h1>
+    <p><b>Masukkan sembarang angka</b></p>
+    <form>
+        <input type="number" name="Inputan angka" id="input">
+        <button type="button" onclick="input_fungsi_1()" id="fungsi">click🤗</button>
+        <p id="hasil_nomor_1"></p>
+    </form>
+</body>
+
+<script>
+    function input_fungsi_1() {
+        const number_input = document.getElementById("input").value
+        if (number_input === ""){
+            document.getElementById("hasil_nomor_1").innerHTML = "Oops, Kamu Lupa Memberi Nilai Input😥";
+            return false;
+        }
+        else if (number_input < 0) {
+            document.getElementById("hasil_nomor_1").innerHTML = "Maaf Guys🥲, Input Angka Harus Positif";
+            return false;
+        }
+        else if (number_input - parseInt(number_input) !== 0) {
+            document.getElementById("hasil_nomor_1").innerHTML = "<b>ERROR😭</b>, Kamu hanya bisa menginput angka bilangan bulat positif🫵";
+            return false;
+        }
+        else {
+            let hasil = 1;
+            for (let x = number_input; x > 1 ; x--) {
+                hasil *= x;
+            }
+            document.getElementById("hasil_nomor_1").innerHTML = `Hasil dari faktorial ${number_input} adalah = ${hasil}`;
+        }
+    }
+</script>
+
+</html>
+
